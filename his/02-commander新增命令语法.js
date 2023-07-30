@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-const {program} = require('commander')
+const { program } = require('commander')
 
 // 如何通过 commander 来新增一个自定义的命令
 program

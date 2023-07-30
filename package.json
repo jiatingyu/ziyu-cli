@@ -9,22 +9,40 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {},
+  "scripts": {
+    "eslint": "eslint --ext .js,tsx --fix .",
+    "format": "prettier . --write"
+  },
   "keywords": [
     "cli",
     "jty",
     "jty-cli",
     "scoff"
   ],
+  "lint-staged": {
+    "src/**/*.{js,tsx}": [
+      "prettier . --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "author": "jiatingyu",
   "license": "ISC",
   "devDependencies": {
     "axios": "^0.21.0",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
     "inquirer": "^7.3.3",
+    "lint-staged": "^13.2.3",
     "ora": "^5.1.0",
-    "plop": "^3.0.1"
+    "plop": "^3.0.1",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "download-git-repo": "^3.0.2",
