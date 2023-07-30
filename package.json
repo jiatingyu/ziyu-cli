@@ -1,0 +1,34 @@
+{
+  "name": "jty-cli",
+  "version": "1.0.0",
+  "description": "自定义的脚手架",
+  "main": "./lib/index.js",
+  "bin": {
+    "jty": "./bin/cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {},
+  "keywords": [
+    "cli",
+    "jty",
+    "jty-cli",
+    "scoff"
+  ],
+  "author": "jiatingyu",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.0",
+    "chalk": "^4.1.0",
+    "commander": "^6.2.0",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "plop": "^3.0.1"
+  },
+  "dependencies": {
+    "download-git-repo": "^3.0.2",
+    "nodegit": "^0.27.0",
+    "shelljs": "^0.8.4"
+  }
+}
