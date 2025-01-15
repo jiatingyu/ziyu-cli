@@ -1,15 +1,18 @@
 {
   "name": "@ziyus/cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "author": "jiatingyu",
   "license": "ISC",
-  "description": "自定义的脚手架",
+  "description": "前端项目初始化脚手架",
   "main": "./lib/index.js",
   "bin": {
-    "ziyu": "./bin/cli.js"
+    "ziyu": "bin/cli.js"
   },
   "homepage": "https://github.com/jiatingyu/ziyu-cli#readme",
-  "repository": "https://github.com/jiatingyu/ziyu-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiatingyu/ziyu-cli.git"
+  },
   "directories": {
     "lib": "lib"
   },
