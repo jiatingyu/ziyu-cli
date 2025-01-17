@@ -1,23 +1,21 @@
 #! /usr/bin/env node
 
-const mainFn = require('..') // 这句话的作用就是找到了当前项目下 lib 里的 index.js
+const mainFn = require('..') 
 const { program } = require('commander')
 const { version } = require('../package.json')
 /**
- * cli.js 文件在我们的脚手架实现过程，
- * 业务逻辑代码都会先传组 index.js （入口文件）
+ * 命令列表
  */
-// 将多个自定义命令放置在一个数据结构中
 const actionMap = {
   create: {
     alias: 'crt',
-    des: '创建模板项目',
-    examples: ['jty crt <projectName>'],
+    des: '选择模板项目',
+    examples: ['bro crt <projectName>'],
   },
   config: {
     alias: 'cfg',
     des: '初始化配置',
-    examples: ['jty cfg set <k> <v>', 'jty cfg get <k>'],
+    examples: ['bro cfg set <k> <v>', 'bro cfg get <k>'],
   },
 }
 
